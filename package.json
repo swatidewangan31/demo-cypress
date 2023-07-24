@@ -4,11 +4,11 @@
   "description": "End to End Test Framework for AiSync Platform. ",
   "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open"    
+    "cy:open": "cypress open"
   },
   "author": "Swati Dewangan",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.17.1"
+    "cypress": "^12.15.0"
   }
 }
