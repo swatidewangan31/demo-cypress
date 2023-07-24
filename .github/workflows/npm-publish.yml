@@ -20,7 +20,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-          working-directory: aisync-tests
+          #working-directory: aisync-tests
           #build: npm run build
           #start: npm start
           #browser: chrome
