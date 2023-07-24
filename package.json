@@ -4,10 +4,7 @@
   "description": "End to End Test Framework for AiSync Platform. ",
   "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open",
-    "cy:run-chrome": "cypress run --browser chrome",
-    "cy:run-firefox": "cypress run --browser firefox",
-    "cy:run-electron": "cypress run --browser electron"
+    "cy:open": "cypress open"    
   },
   "author": "Swati Dewangan",
   "license": "ISC",
