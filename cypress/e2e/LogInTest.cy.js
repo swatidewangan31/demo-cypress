@@ -29,20 +29,28 @@ describe('LogIn to AiSync application tests and Log Out', () => {
   })
 
   //Valid login and verify Ai Build image
-  it('Log in with valid details', () => {
+  it('Log in with valid details', () => {    
     loginPage.enterUserName(logInSelector.email, testData.validEmail)
+    cy.wait(3000)
     loginPage.enterPassword(logInSelector.password, testData.validPassword)
+    cy.wait(3000)
     loginPage.clickLoginButton(logInSelector.logInButton)
+    cy.wait(3000)
     homePage.verifyAiBuildIcon(homePageSelector.aiBuildIcon)
  })
 
  //Log out and verify the Ai Build image on LogIn page
  it('Log out from AiSync application', () => {
    loginPage.enterUserName(logInSelector.email, testData.validEmail)
+   cy.wait(3000)
    loginPage.enterPassword(logInSelector.password, testData.validPassword)
+   cy.wait(3000)
    loginPage.clickLoginButton(logInSelector.logInButton)
+   cy.wait(3000)
    homePage.clickSettingIcon(homePageSelector.setting)
+   cy.wait(3000)
    homePage.clickLogOutButton(homePageSelector.logOutButton)
+   cy.wait(3000)
    loginPage.verifyAiBuildIcon(logInSelector.aiBuildIcon)
  })
 
