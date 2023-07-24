@@ -14,7 +14,7 @@ import homePageSelector from '../selector/homePage.sel'
 describe('LogIn to AiSync application tests and Log Out', () => {
 
   // Before each class will run before each test cases
-  beforeEach ( () => {
+  before ( () => {
     homePage.openAiSyncPlatform(testData.baseURL)
   })
 
