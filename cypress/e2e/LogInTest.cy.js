@@ -15,7 +15,7 @@ describe('LogIn to AiSync application tests and Log Out', () => {
 
   // Before each class will run before each test cases
   before ( () => {
-    homePage.openAiSyncPlatform(testData.baseURL)
+    homePage.openAiSyncPlatform('baseUrl')
   })
 
   //Test Cases
@@ -32,11 +32,8 @@ describe('LogIn to AiSync application tests and Log Out', () => {
   it('Log in with valid details', () => {   
    // homePage.openAiSyncPlatform(testData.baseURL) 
     loginPage.enterUserName(logInSelector.email, testData.validEmail)
-    cy.wait(3000)
     loginPage.enterPassword(logInSelector.password, testData.validPassword)
-    cy.wait(3000)
     loginPage.clickLoginButton(logInSelector.logInButton)
-    cy.wait(3000)
     homePage.verifyAiBuildIcon(homePageSelector.aiBuildIcon)
  })
 
