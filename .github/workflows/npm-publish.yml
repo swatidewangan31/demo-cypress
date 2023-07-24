@@ -7,7 +7,7 @@ on:
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
-    container: cypress/browsers:node16.16.0-chrome107-ff107-edge    
+    container: cypress/browsers:node18.12.0-chrome107  
     strategy:
       # don't fail the entire matrix on failure
       fail-fast: false
@@ -20,7 +20,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-          command: npx cypress run
+          command: npx cypress run --record
           record: true
           parallel: true
         env:
