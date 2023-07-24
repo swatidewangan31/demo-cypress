@@ -1,0 +1,6 @@
+{
+    "ascendingOrder" : "Name (A-Z)",
+    "descendingOrder" : "Name (Z-A)",
+    "recentOrder" : "Most recent",
+    "oldestOrder" : "Oldest"
+}

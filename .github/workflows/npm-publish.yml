@@ -1,0 +1,23 @@
+name: AiSync E2E Tests
+on:
+ push:
+   branches:
+     - master
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-22.04
+    container: cypress/browsers:node16.16.0-chrome107-ff107-edge
+    strategy:
+      # don't fail the entire matrix on failure
+      fail-fast: false
+      matrix:
+        # run copies of the current job in parallel
+        containers: [1, 2]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Cypress run
+        uses: cypress-io/github-action@v5
+        with:
+          build: npx cypress run --record --key ${{ secrets.CYPRESS_AISYNC_RECORD_KEY }}
