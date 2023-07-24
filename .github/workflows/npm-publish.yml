@@ -21,10 +21,10 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           working-directory: aisync-tests
-          build: npm run build
-          start: npm start
-          browser: chrome
-          #command: npx cypress run --record
+          #build: npm run build
+          #start: npm start
+          #browser: chrome
+          command: npx cypress run --record
           record: true
           #parallel: true
         env:

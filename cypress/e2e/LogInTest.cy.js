@@ -15,6 +15,8 @@ describe('LogIn to AiSync application tests and Log Out', () => {
 
   // Before each class will run before each test cases
   before ( () => {
+    cy.clearLocalStorage()
+    cy.clearCookies()
     homePage.openAiSyncPlatform('baseUrl')
   })
 
