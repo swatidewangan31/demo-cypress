@@ -23,8 +23,8 @@ jobs:
           #working-directory: aisync-tests
           #build: npm run build
           #start: npm start
-          #browser: chrome
           command: npx cypress run --record
+          browser: chrome
           record: true
           #parallel: true
         env:
