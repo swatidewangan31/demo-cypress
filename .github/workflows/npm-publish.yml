@@ -20,8 +20,6 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          build: npm run build
-          start: npm start
           command: npx cypress run --record
           record: true
           parallel: true
