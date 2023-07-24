@@ -29,7 +29,8 @@ describe('LogIn to AiSync application tests and Log Out', () => {
   })
 
   //Valid login and verify Ai Build image
-  it('Log in with valid details', () => {    
+  it('Log in with valid details', () => {   
+    homePage.openAiSyncPlatform(testData.baseURL) 
     loginPage.enterUserName(logInSelector.email, testData.validEmail)
     cy.wait(3000)
     loginPage.enterPassword(logInSelector.password, testData.validPassword)
