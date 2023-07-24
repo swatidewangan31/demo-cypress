@@ -11,7 +11,7 @@ jobs:
     strategy:
       # don't fail the entire matrix on failure
       fail-fast: false
-      matrix:
+      #matrix:
         # run copies of the current job in parallel
         # containers: [1, 2]
     steps:
