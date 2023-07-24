@@ -20,17 +20,11 @@ describe('LogIn to AiSync application tests and Log Out', () => {
 
   //Test Cases
 
-  //Invalid Login and verify error message
-  it.skip('Log in with invalid details', () => {
-     loginPage.enterUserName(logInSelector.email, testData.invalidEmail)
-     loginPage.enterPassword(logInSelector.password, testData.invalidPassword)
-     loginPage.clickLoginButton(logInSelector.logInButton)
-     basePage.verifyErrorMsg(testData.message)  
-  })
+  
 
   //Valid login and verify Ai Build image
   it('Log in with valid details', () => {   
-    homePage.openAiSyncPlatform(testData.baseURL) 
+   // homePage.openAiSyncPlatform(testData.baseURL) 
     loginPage.enterUserName(logInSelector.email, testData.validEmail)
     cy.wait(3000)
     loginPage.enterPassword(logInSelector.password, testData.validPassword)
