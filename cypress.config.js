@@ -10,8 +10,7 @@ module.exports = defineConfig({
   defaultCommandTimeout: 10000,
   //retries
   retries: {openMode: 0, runMode: 1},
-  //browser security
-  chromeWebSecurity: false,
+ 
   //test videos
   
   e2e: {

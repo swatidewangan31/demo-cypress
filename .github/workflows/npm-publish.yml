@@ -8,6 +8,7 @@ jobs:
   cypress-run:
     runs-on: ubuntu-22.04
     container: cypress/browsers:node16.16.0-chrome107-ff107-edge
+    options: --user 1001
     strategy:
       # don't fail the entire matrix on failure
       fail-fast: false
