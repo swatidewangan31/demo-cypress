@@ -4,8 +4,8 @@ module.exports = defineConfig({
   //Cypress Dashboard - AiSync Project
   projectId: "cb13ro",
   //viewport
-  viewportHeight: 768,
-  viewportWidth: 1280,
+  // viewportHeight: 768,
+  // viewportWidth: 1280,
   //timeout
   defaultCommandTimeout: 10000,
   //retries
