@@ -12,7 +12,8 @@ module.exports = defineConfig({
   retries: {openMode: 0, runMode: 1},
  
   //test videos
-  
+  video: false,
+
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
