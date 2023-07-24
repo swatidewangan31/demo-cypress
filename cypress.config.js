@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   //Cypress Dashboard - AiSync Project
-  projectId: "9nez1u",
+  projectId: "cb13ro",
   //viewport
   viewportHeight: 768,
   viewportWidth: 1280,

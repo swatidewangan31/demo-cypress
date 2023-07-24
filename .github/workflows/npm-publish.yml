@@ -20,4 +20,4 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-          build: npx cypress run --record --key ${{ secrets.CYPRESS_AISYNC_RECORD_KEY }}
+          build: npx cypress run --record --key c000fb43-3c1d-4b6d-a631-46e5be674c81
