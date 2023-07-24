@@ -1,5 +1,5 @@
 {
-    "baseURL": "https://aisync-test.ai-build.com/login",
+    "baseURL": "/login",
     "validEmail": "aibuild-qa+test1@aibuild.com",
     "validPassword": "Testing12345@",
     "invalidEmail": "test",

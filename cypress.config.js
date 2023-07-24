@@ -15,6 +15,7 @@ module.exports = defineConfig({
   video: false,
 
   e2e: {
+    baseUrl: 'https://aisync-test.ai-build.com',
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
