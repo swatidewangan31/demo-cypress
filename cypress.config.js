@@ -9,11 +9,11 @@ module.exports = defineConfig({
   //timeout
   defaultCommandTimeout: 10000,
   //retries
-  retries: {openMode: 0, runMode: 3},
+  retries: {openMode: 0, runMode: 1},
   //browser security
   chromeWebSecurity: false,
   //test videos
-  video: false,
+  
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
