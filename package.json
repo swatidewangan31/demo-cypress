@@ -4,7 +4,11 @@
   "description": "End to End Test Framework for AiSync Platform. ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "author": "Swati Dewangan",
   "license": "ISC",
