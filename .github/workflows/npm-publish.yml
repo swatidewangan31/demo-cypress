@@ -27,7 +27,7 @@ jobs:
           #working-directory: aisync-tests
           #build: npm run build
           #start: npm start
-          command: npx cypress run --record
+          command: npx cypress run --browser firefox --record
           browser: firefox
           record: true
           #parallel: true
