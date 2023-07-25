@@ -28,7 +28,7 @@ jobs:
           #build: npm run build
           #start: npm start
           command: npx cypress run --record
-          browser: chrome
+          browser: firefox
           record: true
           #parallel: true
         env:

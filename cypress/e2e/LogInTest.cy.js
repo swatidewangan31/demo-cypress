@@ -14,7 +14,7 @@ import homePageSelector from '../selector/homePage.sel'
 describe('LogIn to AiSync application tests and Log Out', () => {
 
   // Before each class will run before each test cases
-  before ( () => {
+  beforeEach ( () => {
     cy.clearLocalStorage()
     cy.clearCookies()
     homePage.openAiSyncPlatform('baseUrl')
@@ -27,7 +27,8 @@ describe('LogIn to AiSync application tests and Log Out', () => {
     loginPage.enterUserName(logInSelector.email, testData.invalidEmail)
     loginPage.enterPassword(logInSelector.password, testData.invalidPassword)
     loginPage.clickLoginButton(logInSelector.logInButton)
-    basePage.verifyErrorMsg(testData.message)  
+    basePage.verifyErrorMsg(testData.message) 
+    cy.wait(5000) 
  })
 
   //Valid login and verify Ai Build image
@@ -37,18 +38,20 @@ describe('LogIn to AiSync application tests and Log Out', () => {
     loginPage.enterPassword(logInSelector.password, testData.validPassword)
     loginPage.clickLoginButton(logInSelector.logInButton)
     homePage.verifyAiBuildIcon(homePageSelector.aiBuildIcon)
+    cy.wait(5000)
  })
 
  //Log out and verify the Ai Build image on LogIn page
  it('Log out from AiSync application', () => {
+  cy.wait(3000)
    loginPage.enterUserName(logInSelector.email, testData.validEmail)
-   cy.wait(3000)
+   
    loginPage.enterPassword(logInSelector.password, testData.validPassword)
-   cy.wait(3000)
+  
    loginPage.clickLoginButton(logInSelector.logInButton)
-   cy.wait(3000)
+   
    homePage.clickSettingIcon(homePageSelector.setting)
-   cy.wait(3000)
+ 
    homePage.clickLogOutButton(homePageSelector.logOutButton)
    cy.wait(3000)
    loginPage.verifyAiBuildIcon(logInSelector.aiBuildIcon)
